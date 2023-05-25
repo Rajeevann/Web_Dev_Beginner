@@ -1,0 +1,106 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: #0c2461; /* Add background color*/
+  color: #fff; /* Add font color*/
+  padding: 20px; /* Add space around the content*/
+  text-align: center; /* Align the text to center*/
+}
+
+h1 {
+  margin: 0px; /* Remove margin from the border*/
+  font: 36px;
+}
+
+.container {
+  margin: 0 auto; /* Remove margin top & Bottom left and right automatically change*/
+  max-width: 1200px; /* Center the container*/
+  padding: 20px; /* Add space around the content*/
+}
+
+.recipe-list {
+  list-style: none;
+  margin: 0; /* Remove margin from the border*/
+  padding: 0; /* Remove padding from the container*/
+}
+
+.recipe-item {
+  display: flex; /* Bring all items to main axis*/
+  align-items: center; /* Center the items */
+  justify-content: space-between; /* Add space between li inner items p, img etc*/
+  margin-bottom: 20px; /* Add space below li inner items p, img etc*/
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* x y blur*/
+  border-radius: 5px;
+  overflow: hidden; /*sets the desired behavior when content does not fit in the parent element box (overflows) in the horizontal and/or vertical direction*/
+}
+
+.recipe-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover; /*the content of a replaced element, such as an <img> or <video>, should be resized to fit its container.*/
+}
+
+.recipe-item h2 {
+  margin: 0;
+  font-size: 20px;
+  padding: 10px;
+  min-width: 200px;
+}
+
+.recipe-item p {
+  margin: 0;
+  padding: 10px;
+  font-size: 16px;
+  color: #777;
+}
+
+.recipe-item a {
+  background: #0c2461;
+  color: #fff;
+  min-width: 150px;
+  padding: 10px;
+  text-decoration: none; /*Remove the underline from link tag a*/
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.recipe-item a:hover {
+  background: #1e3799;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 90%; /* It prevents the used value of the width property from becoming larger than the value specified by max-width.*/
+  }
+
+  .recipe-item {
+    flex-wrap: wrap;
+  }
+  .recipe-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .recipe-item h2 {
+    font-size: 20px;
+    padding: 0;
+    margin-bottom: 10px;
+    text-align: start;
+  }
+
+  .recipe-item p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .recipe-item a {
+    width: 100%;
+    text-align: center;
+  }
+}
+/*Bring the items on top of one item*/

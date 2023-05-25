@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+/* This rule sets the box-sizing property to border-box for all elements, which means that the specified width and height of elements will include their padding and border. This is a useful technique to ensure consistent sizing and layout throughout the page.*/
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+}
+
+.container {
+  background-color: white;
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0;
+  width: 100%;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#total {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px;
+}
